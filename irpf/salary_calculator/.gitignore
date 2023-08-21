@@ -1,0 +1,46 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore uploaded files in development.
+/storage/*
+!/storage/.keep
+
+/node_modules
+/yarn-error.log
+
+/public/assets
+.byebug_history
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+
+# Ignore unneeded application files
+/config/credentials.yml.enc
+/config/database.yml
+
+# Ignore the default pid file for server.
+/tmp/pids/server.pid
+
+# Ignore dotenv
+# .env
+
+# Ignore Mac and Linux file system files
+*.swp
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
