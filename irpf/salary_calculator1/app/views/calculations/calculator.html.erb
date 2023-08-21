@@ -1,0 +1,13 @@
+<%= form_for :user, url: { action: "calculate_salary" }, method: :post do |f| %>
+  <%= f.label :name, "Enter your name:" %>
+  <%= f.text_field :name %><br>
+
+  <%= f.label :net_salary, "Enter your net salary:" %>
+  <%= f.text_field :net_salary %><br>
+
+  <%= f.label :family_status, "Enter your family status:" %>
+  <%= f.text_field :family_status %><br>
+
+  <%= f.submit "Calculate Salary" %>
+<% end %>
+

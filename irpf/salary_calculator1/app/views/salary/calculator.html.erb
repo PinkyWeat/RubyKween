@@ -1,0 +1,16 @@
+<h1>Salary Calculator</h1>
+
+<%= form_with(url: '/calculate', method: 'post', local: true) do %>
+  <%= label_tag :base_salary, "Base Salary:" %>
+  <%= number_field_tag :base_salary %><br>
+
+  <%= label_tag :bonus, "Bonus:" %>
+  <%= number_field_tag :bonus %><br>
+
+  <%= submit_tag "Calculate" %>
+<% end %>
+
+<% if @total %>
+  <h2>Total Salary: <%= @total %></h2>
+<% end %>
+
