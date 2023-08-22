@@ -1,12 +1,13 @@
 <%= form_for :user, url: { action: "calculate_salary" }, method: :post do |f| %>
+  <br>
   <%= f.label :name, "Enter your name:" %>
-  <%= f.text_field :name %><br>
+  <%= f.text_field :name %><br><br>
 
   <%= f.label :net_salary, "Enter your net salary:" %>
-  <%= f.text_field :net_salary %><br>
+  <%= f.text_field :net_salary %><br><br>
 
-  <%= f.label :family_status, "Enter your family status:" %>
-  <%= f.text_field :family_status %><br>
+  <%= f.label :family_status, "Select your family status: (from the dropdown)"%>
+  <%= f.select :family_status, [['Salary does not exceed 2.5 BPS ($14,150)', 1], ['Without children, spouse, or partner; salary > 2.5 BPC ($14,150)', 2], ['With children, spouse, or partner; salary > 2.5 BPC', 3], ['Without children, but with spouse or partner; salary > 2.5 BPC', 4], ['	With children and spouse or partner; salary > 2.5 BPC', 5]] %><br><br>
 
   <%= f.submit "Calculate Salary" %>
 <% end %>
